@@ -1,0 +1,292 @@
+{
+  "type": "Program",
+  "loc": { "line": 1 },
+  "body": [
+    {
+      "type": "FuncDecl",
+      "loc": { "line": 1 },
+      "name": "f",
+      "params": [
+        {
+          "type": "Identifier",
+          "loc": { "line": 1 },
+          "name": "p",
+          "kind": "int"
+        }
+      ],
+      "body": 
+      {
+        "type": "BlockStmt",
+        "loc": { "line": 1 },
+        "body": [
+          {
+            "type": "VarDecl",
+            "loc": { "line": 2 },
+            "is_mutable": true,
+            "identifier": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 0 },
+              "name": "a",
+              "kind": "int"
+            },
+            "typeExpr": {
+              "type": "TypeNode",
+              "name": "int"
+            }
+          },
+          {
+            "type": "VarDecl",
+            "loc": { "line": 2 },
+            "is_mutable": true,
+            "identifier": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 0 },
+              "name": "b",
+              "kind": "int"
+            },
+            "typeExpr": {
+              "type": "TypeNode",
+              "name": "int"
+            }
+          },
+          {
+            "type": "VarDecl",
+            "loc": { "line": 2 },
+            "is_mutable": true,
+            "identifier": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 0 },
+              "name": "arr",
+              "kind": "int"
+            },
+            "typeExpr": {
+              "type": "TypeNode",
+              "name": "int"
+            }
+          },
+          {
+            "type": "VarDecl",
+            "loc": { "line": 3 },
+            "is_mutable": true,
+            "identifier": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 0 },
+              "name": "a",
+              "kind": "int"
+            },
+            "typeExpr": {
+              "type": "TypeNode",
+              "name": "int"
+            }
+          },
+          {
+            "type": "AssignExpr",
+            "loc": { "line": 5 },
+            "op": "=",
+            "left": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 0 },
+              "name": "c"
+            },
+            "right": 
+            {
+              "type": "BasicLit",
+              "loc": { "line": 5 },
+              "kind": "INT",
+              "value": 10,
+              "raw": "10"
+            }
+          },
+          {
+            "type": "AssignExpr",
+            "loc": { "line": 6 },
+            "op": "=",
+            "left": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 0 },
+              "name": "a"
+            },
+            "right": 
+            {
+              "type": "BasicLit",
+              "loc": { "line": 6 },
+              "kind": "INT",
+              "value": 1,
+              "raw": "1"
+            }
+          },
+          {
+            "type": "AssignExpr",
+            "loc": { "line": 7 },
+            "op": "=",
+            "left": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 0 },
+              "name": "arr"
+            },
+            "right": 
+            {
+              "type": "BasicLit",
+              "loc": { "line": 7 },
+              "kind": "INT",
+              "value": 2,
+              "raw": "2"
+            }
+          },
+          {
+            "type": "CallExpr",
+            "loc": { "line": 8 },
+            "name": "g",
+            "arguments": [
+            ]
+          },
+          {
+            "type": "WriteStmt",
+            "loc": { "line": 10 },
+            "expression": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 10 },
+              "name": "a"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "FuncDecl",
+      "loc": { "line": 13 },
+      "name": "main",
+      "params": [
+      ],
+      "body": 
+      {
+        "type": "BlockStmt",
+        "loc": { "line": 13 },
+        "body": [
+          {
+            "type": "VarDecl",
+            "loc": { "line": 14 },
+            "is_mutable": true,
+            "identifier": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 0 },
+              "name": "x",
+              "kind": "int"
+            },
+            "typeExpr": {
+              "type": "TypeNode",
+              "name": "int"
+            }
+          },
+          {
+            "type": "VarDecl",
+            "loc": { "line": 14 },
+            "is_mutable": true,
+            "identifier": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 0 },
+              "name": "badArr",
+              "kind": "int"
+            },
+            "typeExpr": {
+              "type": "TypeNode",
+              "name": "int"
+            }
+          },
+          {
+            "type": "ReadStmt",
+            "loc": { "line": 18 },
+            "expression": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 0 },
+              "name": "x"
+            }
+          },
+          {
+            "type": "WhileStmt",
+            "loc": { "line": 20 },
+            "condition": 
+            {
+              "type": "BinaryExpr",
+              "loc": { "line": 20 },
+              "op": "<",
+              "left": 
+              {
+                "type": "Identifier",
+                "loc": { "line": 20 },
+                "name": "x"
+              },
+              "right": 
+              {
+                "type": "BasicLit",
+                "loc": { "line": 20 },
+                "kind": "INT",
+                "value": 3,
+                "raw": "3"
+              }
+            },
+            "body": 
+            {
+              "type": "BlockStmt",
+              "loc": { "line": 21 },
+              "body": [
+                {
+                  "type": "AssignExpr",
+                  "loc": { "line": 21 },
+                  "op": "=",
+                  "left": 
+                  {
+                    "type": "Identifier",
+                    "loc": { "line": 0 },
+                    "name": "x"
+                  },
+                  "right": 
+                  {
+                    "type": "BinaryExpr",
+                    "loc": { "line": 21 },
+                    "op": "+",
+                    "left": 
+                    {
+                      "type": "Identifier",
+                      "loc": { "line": 21 },
+                      "name": "x"
+                    },
+                    "right": 
+                    {
+                      "type": "BasicLit",
+                      "loc": { "line": 21 },
+                      "kind": "INT",
+                      "value": 1,
+                      "raw": "1"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "ReturnStmt",
+            "loc": { "line": 32 },
+            "expression": 
+            {
+              "type": "Identifier",
+              "loc": { "line": 32 },
+              "name": "x"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

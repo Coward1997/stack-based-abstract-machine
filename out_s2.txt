@@ -1,0 +1,36 @@
+Index    OP Code      Operand
+--------------------------------------------------------------
+0        BR           30
+1        ENTER        20
+2        IN           -
+3        STO          2
+4        LOADI        5
+5        STO          3
+6        LOADI        0
+7        POP          -
+8        LOAD         2
+9        LOADI        3
+10       LE           -
+11       BRF          27
+12       LOAD         3
+13       LOADI        5
+14       ADD          -
+15       STO          3
+16       LOADI        0
+17       POP          -
+18       LOAD         2
+19       LOADI        1
+20       ADD          -
+21       STO          2
+22       LOADI        0
+23       POP          -
+24       LOAD         3
+25       OUT          -
+26       BR           8
+27       LOAD         2
+28       OUT          -
+29       RETURN       -
+30       ENTER        20
+31       CAL          1
+32       POP          -
+33       RETURN       -

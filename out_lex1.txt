@@ -1,0 +1,28 @@
+function	function	1
+ID	f	1
+(	(	1
+)	)	1
+{	{	1
+int	int	2
+ID	a	2
+,	,	2
+ID	b	2
+;	;	2
+int	int	3
+LEX_ERROR	1c	3	非法标识符，标识符不能以数字开头:
+;	;	3
+read	read	5
+ID	a	5
+;	;	5
+ID	b	7
+=	=	7
+NUM	10	7
+LEX_ERROR	@	7	无法识别的字符:
+NUM	2	7
+;	;	7
+ID	c	8
+=	=	8
+NUM	3	8
+LEX_ERROR	#	8	无法识别的字符:
+;	;	8
+LEX_ERROR	/*	10	多行注释未闭合:

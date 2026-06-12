@@ -1,0 +1,33 @@
+function f(int p) {
+    int a, b, arr[5];
+    int a;              /* 语义错误1：变量 a 重复声明 */
+
+    c = 10;             /* 语义错误2：变量 c 未声明 */
+    a[0] = 1;           /* 语义错误3：普通变量 a 被当作数组使用 */
+    arr = 2;            /* 语义错误4：数组 arr 赋值缺少下标 */
+    call g();           /* 语义错误5：函数 g 未声明 */
+
+    write a;
+  }
+
+main() {
+    int x, badArr[3 0;
+
+    /* 语法错误1：数组声明缺少右中括号 ] */
+
+    read x 0;           /* 语法错误2：read 语句缺少分号 ; */
+
+    while (x < 3 {      /* 语法错误3：while 条件缺少右括号 ) */
+      x = x + 1;
+    }
+
+    switch (x) {
+        case 1 0;       /* 语法错误4：case 后缺少冒号 : */
+            write x;
+            break;
+        default:
+            write x;
+    }
+
+    return x 0;         /* 语法错误5：return 语句缺少分号 ; */
+}
