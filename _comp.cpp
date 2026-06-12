@@ -37,9 +37,9 @@ int Line_NO = 1, labelp = 1, datap = 0, fun_var = 0;
 struct keywords { char lexptr[MAXBUF]; }; struct keywords symtable[MAX]; 
 char str[MAX][RES_MAX] = { "int", "for", "if", "else", "do", "call", "while", "read", "write", "main", "switch", "case", "function", "return", "char", "break", "default" };
 
-// ==========================================
+
 // 2. 目标代码生成与回填 (Backpatching) 引擎
-// ==========================================
+
 struct Instruction {
     string opt;
     int operand;
